@@ -1,5 +1,10 @@
 package imooc.sort;
 
+/**
+ * 对任意实现Comparable的类型排序
+ * 此处用的排序方法是选择排序
+ * @param <T>
+ */
 public class SelectSortTemplate<T extends Comparable<T>> {
     public void selectSort(T[] arr) {
         for (int i = 0; i < arr.length; i++) {

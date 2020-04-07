@@ -3,7 +3,7 @@ package imooc.sort;
 import java.util.Arrays;
 import java.util.stream.IntStream;
 
-public class SelectSort {
+public class SelectSort implements SortTestHelp{
     public static void main(String[] args) {
         int[] arr = {3, 5, 8, 6, 10, 1, 4, 9, 7, 2};
 
@@ -24,6 +24,9 @@ public class SelectSort {
         for (Student student: students){
             System.out.println(student);
         }
+
+        double time = SortTestHelper.runningTime("测试排序", new SelectSort());
+        System.out.println("运行时间：" + time + "s");
     }
 
     private static void selectSort(int[] arr) {
@@ -38,5 +41,13 @@ public class SelectSort {
                 }
             }
         }
+    }
+
+    @Override
+    public void execSort() {
+        int[] ints = SortTestHelper.generate(100000, 0, 10000);
+        selectSort(ints);
+        for (int i: ints) System.out.print(i + " ");
+        System.out.println();
     }
 }
