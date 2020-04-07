@@ -1,1 +1,1 @@
-"# arithmetic" 
+My Java learning journey
