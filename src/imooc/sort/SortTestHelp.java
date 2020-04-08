@@ -5,5 +5,5 @@ package imooc.sort;
  */
 public interface SortTestHelp {
 
-    void execSort();
+    void execSort(int[] arr);
 }
