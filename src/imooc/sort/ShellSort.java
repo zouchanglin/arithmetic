@@ -9,7 +9,7 @@ public class ShellSort {
         int[] arr2 = new int[arr.length];
         System.arraycopy(arr, 0, arr2, 0, arr.length);
         long start = System.currentTimeMillis();
-        InsertionSort.insertionSortOptimize(arr);
+        //InsertionSort.insertionSortOptimize(arr);
         long end = System.currentTimeMillis();
 
         shellSort(arr2);

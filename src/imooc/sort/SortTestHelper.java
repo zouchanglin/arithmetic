@@ -28,7 +28,7 @@ public class SortTestHelper {
      */
     public static int[] generateNearlyOrderly(int length, int swapTimes){
         int[] retArray = new int[length];
-        for (int i = 0; i < length; i++) {
+        for (int i = 2; i < length; i++) {
             retArray[i] = i;
         }
 

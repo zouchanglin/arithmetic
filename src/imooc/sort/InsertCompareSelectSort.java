@@ -20,6 +20,6 @@ public class InsertCompareSelectSort {
 //            System.out.print(i + " ");
 //        }
 //        System.out.println();
-        SortTestHelper.runningTime(arr_02, new InsertionSort()); //0.814s
+        //SortTestHelper.runningTime(arr_02, new InsertionSort()); //0.814s
     }
 }

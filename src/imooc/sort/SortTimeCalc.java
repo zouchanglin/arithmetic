@@ -7,7 +7,7 @@ public class SortTimeCalc {
         int[] arr2 = new int[arr1.length];
         System.arraycopy(arr1, 0, arr2, 0, arr1.length);
         long start1 = System.currentTimeMillis();
-        InsertionSort.insertionSortOptimize(arr1);
+        //InsertionSort.insertionSortOptimize(arr1);
         long end1 = System.currentTimeMillis();
 
         long start2 = System.currentTimeMillis();
