@@ -56,4 +56,12 @@ public class SortTestHelper {
         System.out.println("执行时间：" + ret + "s");
         return ret;
     }
+
+    public static int[] generateInversionArray(int n) {
+        int[] ret = new int[n];
+        for (int i = 0; i < n; i++) {
+            ret[i] = i;
+        }
+        return ret;
+    }
 }
