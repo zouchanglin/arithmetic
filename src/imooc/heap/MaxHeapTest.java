@@ -7,5 +7,10 @@ public class MaxHeapTest {
             maxHeap.insert((int)(Math.random() * 100));
         }
         maxHeap.treePrint();
+
+        int max = maxHeap.extractMax();
+        System.out.println("Max is " + max);
+
+        maxHeap.treePrint();
     }
 }
