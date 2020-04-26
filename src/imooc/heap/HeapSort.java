@@ -52,12 +52,12 @@ public class HeapSort {
     }
 
     public static void main(String[] args) {
-        int[] testArray = SortTestHelper.generate(100, 0, 100);
-        heapSort_03(testArray);
-        for (int value : testArray) {
-            System.out.print(value + " ");
-        }
-        System.out.println();
+//        int[] testArray = SortTestHelper.generate(100, 0, 100);
+//        heapSort_03(testArray);
+//        for (int value : testArray) {
+//            System.out.print(value + " ");
+//        }
+        System.out.println("Hello");
 
     }
 }
