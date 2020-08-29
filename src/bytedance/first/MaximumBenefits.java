@@ -1,4 +1,4 @@
-package com.bytedance.first;
+package bytedance.first;
 
 public class MaximumBenefits {
     public static void main(String[] args) {
