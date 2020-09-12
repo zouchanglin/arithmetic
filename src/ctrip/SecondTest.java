@@ -12,6 +12,7 @@ public class SecondTest {
     private static void handle(String line) {
         List<char[]> list = new ArrayList<>();
         String[] tiers = line.split(" ");
+
         if(tiers.length == 0) return;
         if(tiers.length == 1) {
             char[] chars = tiers[0].toCharArray();
@@ -20,6 +21,7 @@ public class SecondTest {
             }
             return;
         }
+
         for (String tier : tiers) {
             char[] points = tier.toCharArray();
             list.add(points);
@@ -52,7 +54,6 @@ public class SecondTest {
         for (StringBuilder str: set)
             if(str.length() == tiers.length) tmpList.add(str);
 
-
         String[] descStrArray = new String[tmpList.size()];
         int index = 0;
         for (StringBuilder str: tmpList) descStrArray[index++] = str.toString();
@@ -71,9 +72,7 @@ public class SecondTest {
         HashSet<Character> set = new HashSet<>();
         char[] charArray = str.toCharArray();
         for(Character s: charArray){
-            if(!set.add(s)){
-                return true;
-            }
+            if(!set.add(s)) return true;
         }
         return false;
     }
